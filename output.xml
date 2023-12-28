@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20231226 00:29:17.958" rpa="false" schemaversion="4">
+<suite id="s1" name="TC1" source="E:\RobotFramework\TestCases\TC1.robot">
+<test id="s1-t1" name="LoginTest" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 00:29:22.478" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20231226 00:29:22.478" endtime="20231226 00:29:31.046"/>
+</kw>
+<kw name="LoginToApplication">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Log in')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20231226 00:29:31.047" level="INFO">Clicking link 'xpath://a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231226 00:29:31.046" endtime="20231226 00:29:32.061"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>hashanthirathnayake@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 00:29:32.062" level="INFO">Typing text 'hashanthirathnayake@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20231226 00:29:32.061" endtime="20231226 00:29:32.544"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 00:29:32.545" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20231226 00:29:32.544" endtime="20231226 00:29:32.637"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 00:29:32.638" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231226 00:29:32.638" endtime="20231226 00:29:32.963"/>
+</kw>
+<status status="PASS" starttime="20231226 00:29:31.046" endtime="20231226 00:29:32.963"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231226 00:29:32.963" endtime="20231226 00:29:35.422"/>
+</kw>
+<status status="PASS" starttime="20231226 00:29:22.477" endtime="20231226 00:29:35.422"/>
+</test>
+<status status="PASS" starttime="20231226 00:29:17.970" endtime="20231226 00:29:35.424"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
